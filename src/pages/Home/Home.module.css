@@ -1,0 +1,12 @@
+.title {
+  /* color: rgb(100, 100, 100); */
+  margin-top: 70px;
+  margin-bottom: 25px;
+  font-size: 40px;
+  text-align: center;
+  color: green;
+}
+
+.container {
+  padding: 15px;
+}

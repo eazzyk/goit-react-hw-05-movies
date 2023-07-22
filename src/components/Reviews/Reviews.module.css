@@ -1,0 +1,15 @@
+.container {
+  padding: 15px 0;
+}
+
+.list {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.text {
+  margin-top: 10px;
+  text-align: justify;
+}
