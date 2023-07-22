@@ -1,4 +1,4 @@
-import Movie from 'components/Movie/Movie';
+import Movie from 'components/MovieInfo/MovieInfo';
 import { fetchMovie } from 'components/services/moviesAPI/fetchMovies';
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
 import { Suspense, useEffect, useRef, useState } from 'react';
@@ -10,7 +10,6 @@ const MovieDetails = () => {
   const [movie, setMovie] = useState(null);
   const [status, setStatus] = useState(STATUS.IDLE);
   const { movieId } = useParams();
-  // console.log('movieId :>> ', movieId);
   const location = useLocation();
   const backLink = useRef([location.state?.from || '/']);
 
@@ -64,7 +63,7 @@ const MovieDetails = () => {
   } else if (status === STATUS.PENDING) {
     return <Loader />;
   } else if (status === STATUS.REJECTED) {
-    return <p>Something went wrong</p>;
+    return <p>Something went wrong...</p>;
   }
 };
 

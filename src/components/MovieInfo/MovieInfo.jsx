@@ -1,8 +1,8 @@
 import defaultPoster from '../images/no_poster.jpg';
-import css from './Movie.module.css';
+import css from './MovieInfo.module.css';
 import PropTypes from 'prop-types';
 
-const Movie = ({ movie }) => {
+const MovieInfo = ({ movie }) => {
   const { poster_path, genres, homepage, overview, title, vote_average } = movie;
   return (
     <div className={css.item}>
@@ -31,7 +31,7 @@ const Movie = ({ movie }) => {
   );
 };
 
-Movie.propTypes = {
+MovieInfo.propTypes = {
   genres: PropTypes.array,
   title: PropTypes.string,
   poster_path: PropTypes.string,
@@ -39,4 +39,4 @@ Movie.propTypes = {
   homepage: PropTypes.string,
   overview: PropTypes.string,
 };
-export default Movie;
+export default MovieInfo;
