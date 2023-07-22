@@ -1,12 +1,11 @@
 import SearchBar from 'components/SearchBar/SearchBar';
-import { fetchSearchMovie } from 'components/services/fetchMovies';
+import { fetchSearchMovie } from 'components/services/moviesAPI/fetchMovies';
 import { useEffect, useState } from 'react';
-import { STATUS } from '../../components/services/status';
+import { STATUS } from 'components/services/moviesAPI/status';
 import { useSearchParams } from 'react-router-dom';
 import Loader from 'components/Loader/Loader';
 import MoviesList from 'components/MoviesList/MoviesList';
 import css from './Movies.module.css';
-// import LoadMore from "components/Button/Button";
 
 const Movies = () => {
   const [results, setResults] = useState(null);

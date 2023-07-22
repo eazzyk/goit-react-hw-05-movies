@@ -1,9 +1,9 @@
 import Movie from 'components/Movie/Movie';
-import { fetchMovie } from 'components/moviesAPI/moviesFetch';
+import { fetchMovie } from 'components/services/moviesAPI/fetchMovies';
 import { Link, Outlet, useLocation, useParams } from 'react-router-dom';
 import { Suspense, useEffect, useRef, useState } from 'react';
 import Loader from 'components/Loader/Loader';
-import { STATUS } from '../../components/moviesAPI/status';
+import { STATUS } from 'components/services/moviesAPI/status';
 import css from './MovieDetails.module.css';
 
 const MovieDetails = () => {

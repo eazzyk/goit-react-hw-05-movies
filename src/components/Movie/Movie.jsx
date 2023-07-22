@@ -16,7 +16,7 @@ const Movie = ({ movie }) => {
         <h2>{title}</h2>
         <h3>Overwiew</h3>
         <p>{overview}</p>
-        <p>rate: {vote_average.toFixed(1)}</p>
+        <p>Rate: {vote_average.toFixed(1)}</p>
         <h3>Genres</h3>
         <ul>
           <li key={'genres'}>{genres?.map(genre => genre.name).join(', ')}</li>

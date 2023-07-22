@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
-import { STATUS } from '../services/status';
+import { STATUS } from 'components/services/moviesAPI/status';
 import { useEffect, useState } from 'react';
-import { fetchMovieRewiews } from 'components/services/fetchMovies';
+import { fetchMovieRewiews } from 'components/services/moviesAPI/fetchMovies';
 import Loader from 'components/Loader/Loader';
 import css from './Reviews.module.css';
 import PropTypes from 'prop-types';

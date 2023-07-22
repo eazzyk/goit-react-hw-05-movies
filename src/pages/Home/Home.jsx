@@ -1,8 +1,8 @@
 // import LoadMore from "components/Button/Button";
 import Loader from 'components/Loader/Loader';
-import { fetchTrendingMovies } from 'components/services/fetchMovies';
+import { fetchTrendingMovies } from 'components/services/moviesAPI/fetchMovies';
 import { useEffect, useState } from 'react';
-import { STATUS } from '../../components/services/status';
+import { STATUS } from 'components/services/moviesAPI/status';
 import MoviesList from 'components/MoviesList/MoviesList';
 import css from './Home.module.css';
 

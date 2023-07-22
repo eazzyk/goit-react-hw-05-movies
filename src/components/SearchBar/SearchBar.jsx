@@ -11,7 +11,7 @@ const SearchBar = ({ handleSearch }) => {
   const handleSubmit = evt => {
     if (value.trim() === '') {
       alert('Empty field!');
-      // return;
+      return;
     }
     evt.preventDefault();
     handleSearch(value);

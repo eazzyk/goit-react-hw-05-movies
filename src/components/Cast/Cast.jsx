@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
-import { STATUS } from '../services/status';
+import { STATUS } from 'components/services/moviesAPI/status';
 import { useEffect, useState } from 'react';
-import { fetchMovieCast } from 'components/services/fetchMovies';
+import { fetchMovieCast } from 'components/services/moviesAPI/fetchMovies';
 import Loader from 'components/Loader/Loader';
 import defaultPoster from '../images/no_poster.jpg';
 import css from './Cast.module.css';
